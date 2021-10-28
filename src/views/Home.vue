@@ -1,7 +1,7 @@
 <template>
   <div class="home wrapper">
     <div class="title_header">
-      <h2 class="title">Мероприятия</h2>
+      <h2 class="title">Проверка</h2>
     </div>
     <div class="events">
       <div class="events_inner">
@@ -9,7 +9,7 @@
           <h4 class="events_title">Ближайшие</h4>
           <div class="events_first">
           <Events :post="post" v-for="(post, index) in SampleEvents" :key="index"/>
-          </div>  
+          </div>
         </div>
 
         <div class="event-card-wrap">
@@ -18,7 +18,7 @@
             <div class="events_card">
             <EventCard :post="post" v-for="(post, index) in SampleEventCard" :key="index"/>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@ export default {
 <style lang="scss" scoped>
   .title_header{
     display:flex;
-    
+
     margin-bottom: 50px;
     padding: 20px;
     width: 100%;
@@ -83,7 +83,7 @@ export default {
     text-transform: uppercase;
     box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-    
+
     .title {
       font-size: 35px;
       color: #007AFF;
@@ -96,7 +96,7 @@ export default {
         width: 235px;
         height: 3px;
         margin: 5px auto;
-        
+
 
         background: linear-gradient(rgba(151, 25, 224, 1),rgba(0, 98, 204, 1));
       }
@@ -113,7 +113,7 @@ export default {
        display: flex;
        width: 100%;
        flex-direction: column;
-      
+
       .events_items{
 
         margin-bottom: 30px;
@@ -124,7 +124,7 @@ export default {
         text-transform: uppercase;
         position: relative;
         margin-bottom: 30px;
-        
+
 
         &::after{
         content: "";
@@ -133,14 +133,14 @@ export default {
         height: 3px;
         margin: 2px auto;
         position: absolute;
-        
+
 
         background: linear-gradient(rgba(151, 25, 224, 1),rgba(0, 98, 204, 1));
         }
        }
 
        .event-card_title{
-         
+
          color: #007AFF;
          font-size: 18px;
          font-weight: 600;
@@ -155,7 +155,7 @@ export default {
           height: 3px;
           margin: 2px auto;
           position: absolute;
-          
+
 
           background: linear-gradient(rgba(151, 25, 224, 1),rgba(0, 98, 204, 1));
           }
@@ -165,10 +165,10 @@ export default {
         display:flex;
         justify-content: center;
         margin-top: 30px;
-        
+
         gap: 100px;
         }
-      } 
+      }
     }
   }
   .allEvents{
@@ -176,9 +176,9 @@ export default {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    
+
     .container{
-    
+
       padding: 70px 25px;
       padding-top: 20px;
       display: flex;
@@ -188,7 +188,7 @@ export default {
 
 
       @media(min-width:800px) {
-        
+
         padding: 80px 25px;
         padding-top: 25px;
         flex-direction: row;
